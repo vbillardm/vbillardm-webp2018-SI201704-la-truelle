@@ -1,24 +1,17 @@
 <section class="header">
-   <div class="header-navbar">
-       <div class="header-navbar-logo">
- 
+   <div class="header__navbar">
+       <div class="header__logo">
+           <!--<img src="<?php //the_field("header_logo"); ?>" alt="Logo du site">-->
        </div>
-       <div class="header-navbar-menu">
-           <ul class="menu">
-               <li class="menu-element"><a href="#"><?php the_field("header_menu1"); ?></a></li>
-               <li class="menu-element"><a href="#">Qui sommes-nous</a></li>
-               <li class="menu-element"><a href="#">Notre savoir faire</a></li>
-               <li class="menu-element"><a href="#"></a>Chiffres clés</li>
-               <li class="menu-element"><a href="#">Nos partenaires</a></li>
+       <div class="header__navbar">
+           <ul class="header__menu">
+               <li class="header__menu_element"><a href="#"><?php the_field("header_menu1"); ?></a></li>
+               <li class="header__menu_element"><a href="#"><?php the_field("header_menu2"); ?></a></li>
+               <li class="header__menu_element"><a href="#"><?php the_field("header_menu3"); ?></a></li>
+               <li class="header__menu_element"><a href="#"><?php the_field("header_menu4"); ?></a></li>
+               <li class="header__menu_element"><a href="#"><?php the_field("header_menu5"); ?></a></li>
            </ul>
-           <button class="button-contact">Prenez contact</button>
+           <button class="header__contact"><?php the_field("header_button"); ?></button>
        </div>
-   </div>
-   <div class="header-content">
-       <h1 class="header-content-title">
-           Travaux de maçonnerie générale<br/>et gros oeuvres de bâtiment
-       </h1>
-       <p class="small">La référence</p>
-       <button class="button-down">Down</button>
    </div>
 </section>
