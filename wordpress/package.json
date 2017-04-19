@@ -1,0 +1,37 @@
+{
+  "name": "UetD",
+  "version": "1.0.0",
+  "description": "Projet de site vitrine pour UetD dans le cadre d'une semaine intensive à Hétic",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.1",
+    "pixrem": "^3.0.2",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.1.0",
+    "postcss-nested": "^1.0.0",
+    "sugarss": "^0.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbillardm/vbillardm-webp2018-SI201704-la-truelle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbillardm/vbillardm-webp2018-SI201704-la-truelle/blob/master/wordpress/"
+  },
+  "homepage": "https://github.com/vbillardm/vbillardm-webp2018-SI201704-la-truelle/blob/master/wordpress/"
+}

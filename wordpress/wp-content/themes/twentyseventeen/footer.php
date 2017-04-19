@@ -42,6 +42,25 @@
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var radios = document.getElementsByName('nf-field-12');
+        console.log(radios);
+        for (var i = 0, length = radios.length; i < length; i++) {
+            console.log(radios[i].value);
+            if (radios[i].checked) {
+                console.log(radios[i].value);
+                if(radios[i].value === 'Non') {
+                    alert('a');
+                    $('#nf-field-9-wrap').hide();
+                    $('#nf-field-10-container').hide();
+                }
+                break;
+            }
+        }
+    });
+</script>
 
 </body>
 </html>
