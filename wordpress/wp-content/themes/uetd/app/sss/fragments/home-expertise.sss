@@ -2,131 +2,134 @@
 @import "../global/mixins.sss"
 
 .expertise
+    padding: 36px 0px
     background: var(--main-bg-color)
     text-align: center
-    padding: 36px 0px
 
     &__title
-        @apply --h2-title
-        margin-bottom: 32px
+        @apply --h2-title-mobile
+        margin-bottom: 16px
 
     &__subtitle
-        @apply --p-text
+        @apply --p-text-mobile
         padding: 0px 64px
-        margin-bottom: 32px
+        margin-bottom: 16px
 
     &__pictograms
-        display: flex
-        justify-content: space-around
-        padding: 32px 10%
+        display: inline-block
+        padding: 0
+        margin-bottom: 16px
 
-        &_container
-            width: 20%
+    &__pictograms_container
+        width: inherit
+        padding: 0px 64px
+        margin-bottom: 24px
 
     &__pictogram
-        @apply --p-text
+        @apply --p-text-small
         @apply --secondary-text-color
-        margin-bottom: 32px
-        height: 20px
-
-    &__image
-        position: relative
-        bottom: 0px
+        text-transform: uppercase
+        padding: 16px
 
     &__bottom
+        display: inline-block
         text-align: left
-        display: flex
-        align-items: flex-end
-        padding: 0px 10%
-
+        padding: 0px 48px
+        margin-bottom: 28px
         p
-            @apply --p-text
-            width: 95%
+            @apply --p-text-mobile
+
+        &_left
+            margin-bottom: 16px
+
+        &_right
+            margin-bottom: 16px
+
+    &__subtitle2
+        @apply --h3-title-mobile
+        margin: 16px 0px
 
     &__contact
-        width: 20%
+        width: 60%
         background: transparent
         border: 1px solid var(--main-button-color)
         border-radius: 4px
         padding: 12px
-        margin-top: 48px
-        margin-bottom: 32px
+        margin: 0
         color: var(--main-button-color)
 
-        &:hover
-            color: var(--secondary-bg-color)
-            border: 1px solid var(--secondary-bg-color)
-            transition: 0.5s
-
-    &__subtitle2
-        @apply --h3-title
-        padding: 16px 0px
-
-@media(--tablet-viewport)
+@media(--tablet-media)
     .expertise
+        &__title
+            @apply --h2-title
+            margin-bottom: 32px
+
+        &__subtitle
+            @apply --p-text
+            padding: 0px 64px
+            margin-bottom: 32px
+
         &__pictograms
+            display: flex
             justify-content: center
             flex-wrap: wrap
             padding: 0px 20%
 
         &__pictograms_container
-            width: 50%
+            width: 20%
             margin-bottom: 32px
 
         &__pictogram
             margin-bottom: 16px
-
-@media(--mobile-viewport)
-    .expertise
-        padding: 36px 0px
-
-        &__title
-            @apply --h2-title-mobile
-            margin-bottom: 16px
-
-        &__subtitle
-            @apply --p-text-mobile
-            padding: 0px 64px
-            margin-bottom: 16px
-
-        &__pictograms
-            display: inline-block
+            height: 30px
             padding: 0
-            margin-bottom: 16px
-
-        &__pictograms_container
-            width: inherit
-            padding: 0px 64px
-            margin-bottom: 24px
-
-        &__pictogram
-            @apply --p-text-small
-            @apply --secondary-text-color
-            padding: 16px
 
         &__bottom
-            display: inline-block
             text-align: left
-            padding: 0px 48px
-            margin-bottom: 28px
+            display: flex
+            align-items: flex-end
+            padding: 0px 10%
+
             p
-                @apply --p-text-mobile
+                @apply --p-text
+                width: 95%
 
-            &_left
-                margin-bottom: 16px
+@media(--desktop-media)
+    .expertise
+        &__pictograms
+            display: flex
+            justify-content: space-around
+            padding: 32px 10%
+            margin-bottom: 0
 
-            &_right
-                margin-bottom: 16px
+            &_container
+                width: 20%
+                padding: 0px
 
-        &__subtitle2
-            @apply --h3-title-mobile
-            margin: 16px 0px
+        &__pictogram
+            @apply --p-text
+            @apply --secondary-text-color
+            margin-bottom: 32px
+
+        &__image
+            position: relative
+            bottom: 0px
 
         &__contact
-            width: 60%
+            width: 20%
             background: transparent
             border: 1px solid var(--main-button-color)
             border-radius: 4px
             padding: 12px
-            margin: 0
+            margin-top: 48px
+            margin-bottom: 32px
             color: var(--main-button-color)
+
+            &:hover
+                color: var(--secondary-bg-color)
+                border: 1px solid var(--secondary-bg-color)
+                transition: 0.5s
+
+        &__subtitle2
+            @apply --h3-title
+            padding: 16px 0px

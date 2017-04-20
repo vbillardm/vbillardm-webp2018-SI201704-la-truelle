@@ -29,6 +29,7 @@
         font-size: var(--main-subtitle-size)
         font-family: 'Hind', sans-serif
         font-weight: bold
+        text-transform: uppercase
         letter-spacing: var(--main-letter-spacing)
         color: var(--main-subtitle-color)
 
@@ -36,6 +37,7 @@
         font-size: var(--main-subtitle-size-mobile)
         font-family: 'Hind', sans-serif
         font-weight: bold
+        text-transform: uppercase
         letter-spacing: var(--main-letter-spacing)
         color: var(--main-subtitle-color)
 
@@ -43,6 +45,7 @@
         font-size: var(--main-small-subtitle-size)
         font-family: 'Open Sans', sans-serif
         font-weight: bold
+        text-transform: uppercase
         letter-spacing: var(--main-letter-spacing)
         color: var(--main-subtitle-color)
 
@@ -50,6 +53,7 @@
         font-size: var(--main-small-subtitle-size-mobile)
         font-family: 'Open Sans', sans-serif
         font-weight: 700
+        text-transform: uppercase
         letter-spacing: var(--main-letter-spacing)
         color: var(--main-subtitle-color)
 
@@ -75,8 +79,6 @@
         font-family: 'Open Sans', sans-serif
         color: var(--main-text-color)
 
-@custom-media --tablet-viewport (max-width: 768px)
+@custom-media --tablet-media (min-width: 360px)
 
-@custom-media --mobile-viewport (max-width: 360px)
-
-@custom-media --desktop-only-viewport (min-width: 769px)
+@custom-media --desktop-media (min-width: 769px)

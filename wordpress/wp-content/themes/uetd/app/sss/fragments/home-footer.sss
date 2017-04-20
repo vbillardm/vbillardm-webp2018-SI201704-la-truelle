@@ -2,75 +2,76 @@
 @import "../global/mixins.sss"
 
 .footer
-    width: 100%
     background: var(--secondary-bg-color)
+    width: 100%
     border-bottom: 5px solid var(--main-button-color)
-    padding: 20px 0px
     @apply --white-text-color
 
     &__company
-        @apply --h2-title
+        @apply --h1-title-mobile
         @apply --white-text-color
-        vertical-align: middle
+        display: block
+        margin: 0
+        padding: 28px 0px
         font-weight: bold
+        text-align: center
 
     &__top
-        display: flex
-        justify-content: space-around
-        align-items: center
+        display: block
+
+    &__contact
+        display: block
+        padding: 0px 56px 48px 56px
+
+    &__legals
+        @apply --p-text-mobile
+        @apply --white-text-color
+        text-decoration: none
+        display: block
+        font-weight: bold
+        padding-top: 16px
 
     &__address
-        @apply --p-text
+        @apply --p-text-mobile
         @apply --white-text-color
 
     &__phone
-        @apply --p-text
+        @apply --p-text-mobile
         @apply --white-text-color
 
     &__mail
-        @apply --p-text
-        @apply --white-text-color
+        @apply --p-text-mobile
+        color: var(--main-button-color)
 
-    &__legals
-        @apply --p-text
-        @apply --white-text-color
-        display: block
-        text-decoration: none
-        font-weight: bold
-        padding-top: 24px
-
-@media(--mobile-viewport)
+@media(--tablet-media)
     .footer
-        &__company
-            @apply --h1-title-mobile
-            @apply --white-text-color
-            display: block
-            margin: 0
-            padding: 28px 0px
-            font-weight: bold
-            text-align: center
+        padding: 20px 0px
 
-        &__top
-            display: block
+        &__company
+            @apply --h2-title
+            @apply --white-text-color
+            vertical-align: middle
+            font-weight: bold
 
         &__contact
-            display: block
-            padding: 0px 56px 48px 56px
+            padding-bottom: 0px
 
-        &__legals
-            @apply --p-text-mobile
-            @apply --white-text-color
-            font-weight: bold
-            padding-top: 16px
+        &__top
+            display: flex
+            justify-content: space-around
+            align-items: center
 
         &__address
-            @apply --p-text-mobile
+            @apply --p-text
             @apply --white-text-color
 
         &__phone
-            @apply --p-text-mobile
+            @apply --p-text
             @apply --white-text-color
 
         &__mail
-            @apply --p-text-mobile
-            color: var(--main-button-color)
+            @apply --p-text
+            @apply --white-text-color
+
+        &__legals
+            padding-top: 24px

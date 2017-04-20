@@ -6,27 +6,28 @@
     display: block
 
     h2
-        @apply --h2-title
+        @apply --h2-title-mobile
         @apply --white-text-color
 
     &__container
         background: rgba(54, 69, 80, 0.7)
 
     &__title
-        padding: 32px
+        padding: 32px 16px
 
     &__subtitle
-        @apply --p-text
+        @apply --p-text-mobile
         @apply --white-text-color
         padding: 0px 56px
 
     &__numbers
-        display: flex
-        justify-content: space-around
-        padding-top: 48px
-        padding-bottom: 32px
+        display: inline-block
+        margin-top: 32px
+        margin-bottom: 20px
+        padding: 0px
 
     &__numbers_container
+        width: inherit
         line-height: 3
         margin-bottom: 24px
 
@@ -36,15 +37,18 @@
         font-weight: bold
 
     &__label
-        @apply --p-text
+        @apply --p-text-mobile
         @apply --white-text-color
+        line-height: 1
 
-@media(--tablet-viewport)
+@media(--tablet-media)
     .counters
         &__numbers
+            display: flex
             justify-content: center
             flex-wrap: wrap
             padding: 32px 120px
+            margin-bottom: 0
 
         &__numbers_container
             width: 50%
@@ -52,33 +56,33 @@
         &__label
             line-height: 1
 
-@media(--mobile-viewport)
+@media(--desktop-media)
     .counters
         h2
-            @apply --h2-title-mobile
+            @apply --h2-title
             @apply --white-text-color
 
         &__container
             background: rgba(54, 69, 80, 0.7)
 
         &__title
-            padding: 32px 16px
+            padding: 32px
 
         &__subtitle
-            @apply --p-text-mobile
+            @apply --p-text
             @apply --white-text-color
             padding: 0px 56px
 
         &__numbers
-            display: inline-block
-            margin-top: 32px
-            margin-bottom: 20px
-            padding: 0px
+            display: flex
+            justify-content: space-around
+            flex-wrap: no-wrap
+            padding: 0 0 32px 0
 
         &__numbers_container
-            width: inherit
             line-height: 3
             margin-bottom: 24px
+            width: inherit
 
         &__number
             @apply --h1-title
@@ -86,6 +90,5 @@
             font-weight: bold
 
         &__label
-            @apply --p-text-mobile
+            @apply --p-text
             @apply --white-text-color
-            line-height: 1

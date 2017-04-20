@@ -5,13 +5,15 @@
     text-align: center
     background: var(--main-bg-color)
 
+    padding: 32px 32px
+
     &__title
-        @apply --h2-title
-        margin: 28px 0px
+        @apply --h2-title-mobile
+        margin: 16px 0px
 
     &__subtitle
-        @apply --p-text
-        margin-bottom: 32px
+        @apply --p-text-mobile
+        margin-bottom: 16px
 
     input
         border-radius: 4px
@@ -23,50 +25,28 @@
 
     textarea
         border: 1px solid var(--main-bg-color)
+        font-family: sans-serif
+
+    .nf-field-element
+        .nf-element[type=button]
+            width: 100%
+            background: var(--secondary-bg-color)
+            color: var(--secondary-text-color)
 
     .nf-field-label label
-        @apply --p-text
+        @apply --p-text-mobile
         font-weight: normal
 
-    .nf-error-msg
-        color: var(--error-message-color)
-
-    .nf-response-msg
-        color: var(--main-button-color)
-        margin-bottom: 16px
-
-@media(--desktop-only-viewport)
+@media(--tablet-media)
     .contact
-        padding: 1px 120px
-
-        .field-wrap > div
-            input
-                width: 50%
-
-            textarea
-                width: 50%
-
-@media(--tablet-viewport)
-    .contact
-        padding: 1px 64px
-
-        .nf-field-element
-            .nf-element[type=button]
-                width: 100%
-                background: var(--secondary-bg-color)
-                color: var(--secondary-text-color)
-
-@media(--mobile-viewport)
-    .contact
-        padding: 1px 32px
+        padding: 32px 64px
 
         &__title
-            @apply --h2-title-mobile
-            margin: 16px 0px
+            @apply --h2-title
 
         &__subtitle
-            @apply --p-text-mobile
-            margin-bottom: 16px
+            @apply --p-text
+            margin-bottom: 32px
 
         .nf-field-element
             .nf-element[type=button]
@@ -74,6 +54,20 @@
                 background: var(--secondary-bg-color)
                 color: var(--secondary-text-color)
 
+@media(--desktop-media)
+    .contact
+        padding: 32px 240px
+
+        $_title
+            margin: 28px 0px
+
         .nf-field-label label
-            @apply --p-text-mobile
+            @apply --p-text
             font-weight: normal
+
+        .nf-error-msg
+            color: var(--error-message-color)
+
+        .nf-response-msg
+            color: var(--main-button-color)
+            margin-bottom: 16px
