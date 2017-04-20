@@ -53,7 +53,7 @@ gulp.task('sss', function () {
     ))
     .pipe(concat('style'))
     .pipe(rename({ extname: '.css' }))
-    .pipe(gulp.dest('wp-content/themes/uetd/dist/css'))
+    .pipe(gulp.dest('wp-content/themes/uetd'))
     .pipe(sync.stream());
 });
 

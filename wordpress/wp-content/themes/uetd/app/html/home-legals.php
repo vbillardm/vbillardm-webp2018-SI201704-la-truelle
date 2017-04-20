@@ -1,3 +1,3 @@
 <section class="legals">
-    <a href="#">Mentions Légales</a>
+    <a class="legals__link" href="#">Mentions Légales</a>
 </section>
