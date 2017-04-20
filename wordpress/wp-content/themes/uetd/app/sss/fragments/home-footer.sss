@@ -1,7 +1,76 @@
 @import "../global/variables.sss"
 @import "../global/mixins.sss"
 
+.footer
+    width: 100%
+    background: var(--secondary-bg-color)
+    border-bottom: 5px solid var(--main-button-color)
+    padding: 20px 0px
+    @apply --white-text-color
+
+    &__company
+        @apply --h2-title
+        @apply --white-text-color
+        vertical-align: middle
+        font-weight: bold
+
+    &__top
+        display: flex
+        justify-content: space-around
+        align-items: center
+
+    &__address
+        @apply --p-text
+        @apply --white-text-color
+
+    &__phone
+        @apply --p-text
+        @apply --white-text-color
+
+    &__mail
+        @apply --p-text
+        @apply --white-text-color
+
+    &__legals
+        @apply --p-text
+        @apply --white-text-color
+        display: block
+        text-decoration: none
+        font-weight: bold
+        padding-top: 24px
+
 @media(--mobile-viewport)
     .footer
-        background: var(--secondary-bg-color)
-        text-align: center
+        &__company
+            @apply --h1-title-mobile
+            @apply --white-text-color
+            display: block
+            margin: 0
+            padding: 28px 0px
+            font-weight: bold
+            text-align: center
+
+        &__top
+            display: block
+
+        &__contact
+            display: block
+            padding: 0px 56px 48px 56px
+
+        &__legals
+            @apply --p-text-mobile
+            @apply --white-text-color
+            font-weight: bold
+            padding-top: 16px
+
+        &__address
+            @apply --p-text-mobile
+            @apply --white-text-color
+
+        &__phone
+            @apply --p-text-mobile
+            @apply --white-text-color
+
+        &__mail
+            @apply --p-text-mobile
+            color: var(--main-button-color)

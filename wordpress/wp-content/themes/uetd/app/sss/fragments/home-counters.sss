@@ -1,0 +1,91 @@
+@import "../global/variables.sss"
+@import "../global/mixins.sss"
+
+.counters
+    text-align: center
+    display: block
+
+    h2
+        @apply --h2-title
+        @apply --white-text-color
+
+    &__container
+        background: rgba(54, 69, 80, 0.7)
+
+    &__title
+        padding: 32px
+
+    &__subtitle
+        @apply --p-text
+        @apply --white-text-color
+        padding: 0px 56px
+
+    &__numbers
+        display: flex
+        justify-content: space-around
+        padding-top: 48px
+        padding-bottom: 32px
+
+    &__numbers_container
+        line-height: 3
+        margin-bottom: 24px
+
+    &__number
+        @apply --h1-title
+        @apply --white-text-color
+        font-weight: bold
+
+    &__label
+        @apply --p-text
+        @apply --white-text-color
+
+@media(--tablet-viewport)
+    .counters
+        &__numbers
+            justify-content: center
+            flex-wrap: wrap
+            padding: 32px 120px
+
+        &__numbers_container
+            width: 50%
+
+        &__label
+            line-height: 1
+
+@media(--mobile-viewport)
+    .counters
+        h2
+            @apply --h2-title-mobile
+            @apply --white-text-color
+
+        &__container
+            background: rgba(54, 69, 80, 0.7)
+
+        &__title
+            padding: 32px 16px
+
+        &__subtitle
+            @apply --p-text-mobile
+            @apply --white-text-color
+            padding: 0px 56px
+
+        &__numbers
+            display: inline-block
+            margin-top: 32px
+            margin-bottom: 20px
+            padding: 0px
+
+        &__numbers_container
+            width: inherit
+            line-height: 3
+            margin-bottom: 24px
+
+        &__number
+            @apply --h1-title
+            @apply --white-text-color
+            font-weight: bold
+
+        &__label
+            @apply --p-text-mobile
+            @apply --white-text-color
+            line-height: 1

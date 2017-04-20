@@ -1,59 +1,82 @@
 @import "variables.sss"
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600,700')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700')
+
+@font-face
+    font-family: 'Open Sans'
+
+@font-face
+    font-family: 'Hind'
 
 :root
     --white-text-color:
         color: var(--secondary-text-color)
+
+    --secondary-text-color:
+        color: var(--main-subtitle-color)
 
     --small-text:
         font-size: var(--main-small-text-size)
 
     --h1-title:
         font-size: var(--main-title-size)
+        font-family: 'Hind'
         letter-spacing: var(--main-letter-spacing)
         line-height: var(--main-title-lineheight)
         color: var(--main-title-color)
 
     --h2-title:
         font-size: var(--main-subtitle-size)
+        font-family: 'Hind', sans-serif
+        font-weight: bold
         letter-spacing: var(--main-letter-spacing)
-        line-height: var(--main-title-lineheight)
         color: var(--main-subtitle-color)
 
     --h2-title-mobile:
         font-size: var(--main-subtitle-size-mobile)
+        font-family: 'Hind', sans-serif
+        font-weight: bold
         letter-spacing: var(--main-letter-spacing)
-        line-height: var(--main-title-lineheight)
         color: var(--main-subtitle-color)
 
-    --h2-title:
+    --h3-title:
         font-size: var(--main-small-subtitle-size)
+        font-family: 'Open Sans', sans-serif
+        font-weight: bold
         letter-spacing: var(--main-letter-spacing)
-        line-height: var(--main-title-lineheight)
         color: var(--main-subtitle-color)
 
     --h3-title-mobile:
         font-size: var(--main-small-subtitle-size-mobile)
+        font-family: 'Open Sans', sans-serif
+        font-weight: 700
         letter-spacing: var(--main-letter-spacing)
-        line-height: var(--main-title-lineheight)
         color: var(--main-subtitle-color)
 
     --p-text:
         font-size: var(--main-text-size)
+        font-family: 'Open Sans', sans-serif
         color: var(--main-text-color)
 
     --p-text-mobile:
         font-size: var(--main-text-size-mobile)
+        font-family: 'Open Sans', sans-serif
         color: var(--main-text-color)
 
     --p-text-small:
         font-size: var(--main-small-text-size)
+        font-family: 'Open Sans', sans-serif
+        font-weight: semibold
         color: var(--secondary-text-color)
         letter-spacing: 1
 
     --p-text-form:
         font-size: var(--main-form-text-size)
+        font-family: 'Open Sans', sans-serif
         color: var(--main-text-color)
 
-@custom-media --tablet-viewport (max-width: 767px)
+@custom-media --tablet-viewport (max-width: 768px)
 
 @custom-media --mobile-viewport (max-width: 360px)
+
+@custom-media --desktop-only-viewport (min-width: 769px)
