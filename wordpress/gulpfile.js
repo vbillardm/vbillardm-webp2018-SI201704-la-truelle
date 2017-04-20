@@ -29,7 +29,18 @@ gulp.task('serve', ['html', 'sss', 'js'], function() {
 
 // Configure HTML tasks.
 gulp.task('html', function () {
-  return gulp.src('wp-content/themes/uetd/app/html/*.php')
+  return gulp.src([
+        'wp-content/themes/uetd/app/html/home-header.php',
+        'wp-content/themes/uetd/app/html/home-landing.php',
+        'wp-content/themes/uetd/app/html/home-modal.php',
+        'wp-content/themes/uetd/app/html/home-about.php',
+        'wp-content/themes/uetd/app/html/home-expertise.php',
+        'wp-content/themes/uetd/app/html/home-counters.php',
+        'wp-content/themes/uetd/app/html/home-partners.php',
+        'wp-content/themes/uetd/app/html/home-contact.php',
+        'wp-content/themes/uetd/app/html/home-footer.php',
+        'wp-content/themes/uetd/app/html/home-legals.php'
+    ])
     .pipe(concat('index'))
     .pipe(rename({ extname: '.php' }))
     .pipe(gulp.dest('wp-content/themes/uetd/dist'))

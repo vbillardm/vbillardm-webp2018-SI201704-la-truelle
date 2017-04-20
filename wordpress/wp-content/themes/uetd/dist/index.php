@@ -1,3 +1,28 @@
+<section class="header">
+    <div class="header__navbar">
+        <div class="header__logo">
+           <!--<img src="<?php //the_field("header_logo"); ?>" alt="Logo du site">-->
+        </div>
+        <div class="header__menu">
+            <ul class="header__menu_list">
+                <li class="header__menu_element1"><a href="#"><?php the_field("header_menu1"); ?></a></li>
+                <li class="header__menu_element2"><a href="#"><?php the_field("header_menu2"); ?></a></li>
+                <li class="header__menu_element3"><a href="#"><?php the_field("header_menu3"); ?></a></li>
+                <li class="header__menu_element4"><a href="#"><?php the_field("header_menu4"); ?></a></li>
+                <li class="header__menu_element5"><a href="#"><?php the_field("header_menu5"); ?></a></li>
+            </ul>
+            <button class="header__button"><?php the_field("header_button"); ?></button>
+        </div>
+    </div>
+</section>
+<section class="landing">
+    <div class="landing__content">
+        <h1 class="landing__title"><?php the_field("landing_title"); ?></h1>
+        <p class="landing__subtitle"><?php the_field("landing_subtitle"); ?></p>
+        <button class="landing__button">Down</button>
+    </div>
+</section>
+
 <section class="about">
     <h2 class="about__title"><?php the_field("about_title"); ?></h2>
     <div class="about__middle">
@@ -15,37 +40,6 @@
         </div>
         <div class="about__bottom_right">
             <p class="about__text about__text3"><?php the_field("about_text3"); ?></p>
-        </div>
-    </div>
-</section>
-
-<section class="counters">
-    <h2 class="counters__title"><?php the_field("counters_title"); ?></h2>
-    <p class="counters__subtitle"><?php the_field("counters_subtitle"); ?></p>
-    <div class="counters__numbers">
-        <div class="counters__numbers_container">
-            <p class="counters__number1">
-                <span class="counters__number"><?php the_field("counters_number1"); ?></span>
-                <?php the_field("counters_label1"); ?>
-            </p>
-        </div>
-        <div class="counters__numbers_container">
-            <p class="counters__number2">
-                <span class="counters__number"><?php the_field("counters_number2"); ?></span>
-                <?php the_field("counters_label2"); ?>
-            </p>
-        </div>
-        <div class="counters_numbers_container">
-            <p class="counters__number3">
-                <span class="counters__number"><?php the_field("counters_number3"); ?></span>
-                <?php the_field("counters_label3"); ?>
-            </p>
-        </div>
-        <div class="counters__numbers_container">
-            <p class="counters__number4">
-                <span class="counters__number"><?php the_field("counters_number4"); ?></span>
-                <?php the_field("counters_label4"); ?>
-            </p>
         </div>
     </div>
 </section>
@@ -81,44 +75,36 @@
     </div>
     <button class="expertise__contact">Nous contacter</button>
 </section>
-<section class="footer">
-    <div class="footer__top">
-        <span class="footer__company">U&D</span>
-        <div class="footer__contact">
-            <p class="footer__address">23 avenue carnot 93140 BONDY</p>
-            <p class="footer__phone">Tél : +33 1 54 38 39 91</p>
-            <p class="footer__fax">Fax : +33 1 54 38 39 93</p>
+<section class="counters">
+    <h2 class="counters__title"><?php the_field("counters_title"); ?></h2>
+    <p class="counters__subtitle"><?php the_field("counters_subtitle"); ?></p>
+    <div class="counters__numbers">
+        <div class="counters__numbers_container">
+            <p class="counters__number1">
+                <span class="counters__number"><?php the_field("counters_number1"); ?></span>
+                <?php the_field("counters_label1"); ?>
+            </p>
+        </div>
+        <div class="counters__numbers_container">
+            <p class="counters__number2">
+                <span class="counters__number"><?php the_field("counters_number2"); ?></span>
+                <?php the_field("counters_label2"); ?>
+            </p>
+        </div>
+        <div class="counters_numbers_container">
+            <p class="counters__number3">
+                <span class="counters__number"><?php the_field("counters_number3"); ?></span>
+                <?php the_field("counters_label3"); ?>
+            </p>
+        </div>
+        <div class="counters__numbers_container">
+            <p class="counters__number4">
+                <span class="counters__number"><?php the_field("counters_number4"); ?></span>
+                <?php the_field("counters_label4"); ?>
+            </p>
         </div>
     </div>
 </section>
-<section class="header">
-    <div class="header__navbar">
-        <div class="header__logo">
-           <!--<img src="<?php //the_field("header_logo"); ?>" alt="Logo du site">-->
-        </div>
-        <div class="header__menu">
-            <ul class="header__menu_list">
-                <li class="header__menu_element1"><a href="#"><?php the_field("header_menu1"); ?></a></li>
-                <li class="header__menu_element2"><a href="#"><?php the_field("header_menu2"); ?></a></li>
-                <li class="header__menu_element3"><a href="#"><?php the_field("header_menu3"); ?></a></li>
-                <li class="header__menu_element4"><a href="#"><?php the_field("header_menu4"); ?></a></li>
-                <li class="header__menu_element5"><a href="#"><?php the_field("header_menu5"); ?></a></li>
-            </ul>
-            <button class="header__button"><?php the_field("header_button"); ?></button>
-        </div>
-    </div>
-</section>
-<section class="landing">
-    <div class="landing__content">
-        <h1 class="landing__title"><?php the_field("landing_title"); ?></h1>
-        <p class="landing__subtitle"><?php the_field("landing_subtitle"); ?></p>
-        <button class="landing__button">Down</button>
-    </div>
-</section>
-<section class="legals">
-    <a class="legals__link" href="#">Mentions Légales</a>
-</section>
-
 <section class="partners">
     <h2 class="partners__title"><?php the_field("partners_title"); ?></h2>
     <p class="partners__subtitle"><?php the_field("partners_subtitle"); ?></p>
@@ -129,4 +115,18 @@
         <img class="partners__logo4" src="<?php echo wp_get_attachment_image_src(get_field('partners_logo4'), 'square', false) ?>" alt="partner4">
         <img class="partners__logo5" src="<?php echo wp_get_attachment_image_src(get_field('partners_logo5'), 'square', false) ?>" alt="partner5">
     </div>
+</section>
+
+<section class="footer">
+    <div class="footer__top">
+        <span class="footer__company">U&D</span>
+        <div class="footer__contact">
+            <p class="footer__address">23 avenue carnot 93140 BONDY</p>
+            <p class="footer__phone">Tél : +33 1 54 38 39 91</p>
+            <p class="footer__fax">Fax : +33 1 54 38 39 93</p>
+        </div>
+    </div>
+</section>
+<section class="legals">
+    <a class="legals__link" href="#">Mentions Légales</a>
 </section>
