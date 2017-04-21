@@ -2,15 +2,38 @@
 @import "../global/mixins.sss"
 
 .landing
+    width: 100%
+    height: 100%
 
-    &__background
+    &__container
+        background: rgba(54, 69, 80, 0.7)
         width: 100%
         height: 100%
-        background-position: center center
-        background-repeat: no-repeat
-        background-attachment: fixed
-        background-size: cover
-        background-color: #999
+
+    &__background
+        position: absolute
+        overflow: hidden
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+
+    &__video
+        position: absolute
+        top: 0
+        left: 0
+        display: block
+        overflow: hidden
+        min-height: 100%
+        z-index: -1
+
+        @media (min-aspect-ratio: 16/9)
+            width: 100%
+            height: auto
+
+        @media (max-aspect-ratio: 16/9)
+            width: auto
+            height: 100%
 
     &__content
         width: 80vw
@@ -44,6 +67,19 @@
         box-shadow: 4px 2px 5px 0
         left: calc(50% - 15px)
         transform: rotate(45deg)
+
+    &__contact
+        position: absolute
+        left: calc(50% - 150px)
+        bottom: 150px
+        width: 300px
+        background: transparent
+        border: 1px solid var(--main-button-color)
+        border-radius: 4px
+        padding: 12px
+        margin: 0
+        color: var(--main-button-color)
+        text-transform: uppercase
 
     &__arrow
         position: absolute

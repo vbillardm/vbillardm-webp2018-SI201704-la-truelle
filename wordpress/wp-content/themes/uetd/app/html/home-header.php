@@ -3,7 +3,7 @@
 
     <header class="header__bar">
         <h2 class="header__title">U&D</h2>
-        <img class="header__logo" src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/Logo-2.png" alt="U&D">
+        <img class="header__logo" src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/Logo-1.png" alt="U&D">
         <div class="header__rowmenu">
             <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu1"); ?></a></div>
             <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu2"); ?></a></div>

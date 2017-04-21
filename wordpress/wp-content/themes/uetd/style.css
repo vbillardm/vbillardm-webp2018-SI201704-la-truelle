@@ -12,6 +12,71 @@ body {
     font-family: 'Open Sans', sans-serif!important
 }
 
+
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@font-face {
+    font-family: 'Open Sans'
+}
+@font-face {
+    font-family: 'Hind'
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Hind:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @font-face {
@@ -110,11 +175,11 @@ body {
 .about__image3 {
     display: none;
 }
-@media(min-width: 769px) {
+@media screen and (min-width: 980px) {
     .about__image3 {
         display: block;
         position: absolute;
-        right: 200px;
+        right: 236px;
         top: 350px;
     }
 }
@@ -125,7 +190,7 @@ body {
     .about__image4 {
         display: block;
         position: absolute;
-        right: 0;
+        right: 36px;
         top: 350px;
     }
 }
@@ -527,11 +592,11 @@ body {
         padding: 0px 20%;
     }
     .expertise__pictograms_container {
-        width: 20%;
+        width: 50%;
         margin-bottom: 32px;
     }
     .expertise__pictogram {
-        margin-bottom: 16px;
+        margin-bottom: 32px;
         height: 30px;
         padding: 0;
     }
@@ -641,6 +706,20 @@ body {
     font-weight: bold;
     padding-top: 16px
 }
+.footer__legals:hover {
+    text-decoration: none;
+    color: #E0BA98;
+    transition: 0.5s
+}
+.footer__legals:visited {
+    text-decoration: none;
+    color: #F9F9F9
+}
+.footer__legals:focus {
+    outline: none;
+    text-decoration: none;
+    color: #F9F9F9
+}
 .footer__address {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
@@ -724,7 +803,8 @@ body {
     top: 0;
     height: 60px;
     width: 100%;
-    background-color: 1f282f
+    background-color: 1f282f;
+    z-index: 100
 }
 .header__logo {
     display: none
@@ -734,7 +814,7 @@ body {
         display: block;
         height: 25px;
         width: auto;
-        margin: 25px 25px;
+        margin: 15px 15px;
         color: white
     }
 }
@@ -835,7 +915,9 @@ body {
     background-color: #111;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.5s
+    transition: 0.5s;
+    z-index: 301;
+    background-image: url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/bg-mobile2.jpg')
 }
 @media screen and (max-height: 450px) {
     .header__sidenav {
@@ -843,12 +925,12 @@ body {
     }
 }
 .header__item {
-    height: 40px
+    height: 60px
 }
 .header__link {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 15px;
     color: #f9f9f9;
     display: block;
     transition: 0.3s;
@@ -858,9 +940,9 @@ body {
     padding-bottom: 8px
 }
 .header__link:hover {
-    border-bottom: solid 1px #e0ba98;
+    border-bottom: solid 1px #364550;
     display: inline;
-    color: #e0ba98
+    color: #364550
 }
 @media screen and (max-height: 450px) {
     .header__link {
@@ -886,15 +968,43 @@ body {
 @font-face {
     font-family: 'Hind';
 }
-.landing {}
-.landing__background {
+.landing {
     width: 100%;
     height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #999;
+}
+.landing__container {
+    background: rgba(54, 69, 80, .7);
+    width: 100%;
+    height: 100%;
+}
+.landing__background {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.landing__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    min-height: 100%;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    .landing__video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .landing__video {
+        width: auto;
+        height: 100%;
+    }
 }
 .landing__content {
     width: 80vw;
@@ -934,6 +1044,19 @@ body {
     box-shadow: 4px 2px 5px 0;
     left: calc(50% - 15px);
     transform: rotate(45deg);
+}
+.landing__contact {
+    position: absolute;
+    left: calc(50% - 150px);
+    bottom: 150px;
+    width: 300px;
+    background: transparent;
+    border: 1px solid #E0BA98;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 0;
+    color: #E0BA98;
+    text-transform: uppercase;
 }
 .landing__arrow {
     position: absolute;
@@ -986,68 +1109,4 @@ body {
         font-family: 'Open Sans', sans-serif;
         color: #888888
     }
-}
-
-
-@import url('https://fonts.googleapis.com/css?family=Hind:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-@font-face {
-    font-family: 'Open Sans'
-}
-@font-face {
-    font-family: 'Hind'
-}
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain) */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline
-}
-
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block
-}
-
-body {
-    line-height: 1
-}
-
-ol, ul {
-    list-style: none
-}
-
-blockquote, q {
-    quotes: none
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
 }

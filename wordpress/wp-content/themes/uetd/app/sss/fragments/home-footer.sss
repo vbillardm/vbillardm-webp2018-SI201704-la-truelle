@@ -31,6 +31,20 @@
         font-weight: bold
         padding-top: 16px
 
+        &:hover
+            text-decoration: none
+            color: var(--main-button-color)
+            transition: 0.5s
+
+        &:visited
+            text-decoration: none
+            @apply --white-text-color
+
+        &:focus
+            outline: none
+            text-decoration: none
+            @apply --white-text-color
+
     &__address
         @apply --p-text-mobile
         @apply --white-text-color

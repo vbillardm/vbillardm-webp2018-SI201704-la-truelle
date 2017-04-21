@@ -10,6 +10,7 @@
         height: 60px
         width: 100%
         background-color: 1f282f
+        z-index: 100
 
     &__logo
         display: none
@@ -18,7 +19,7 @@
             display: block
             height: 25px
             width: auto
-            margin: 25px 25px
+            margin: 15px 15px
             color: white
 
     &__title
@@ -104,17 +105,19 @@
         overflow-x: hidden
         padding-top: 60px
         transition: 0.5s
+        z-index: 301
+        background-image: url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/bg-mobile2.jpg')
         
         @media screen and (max-height: 450px)
             padding-top: 15px
 
     &__item
-        height: 40px
+        height: 60px
 
     &__link
         padding: 8px 8px 8px 32px
         text-decoration: none
-        font-size: 11px
+        font-size: 15px
         color: #f9f9f9
         display: block
         transition: 0.3s
@@ -124,10 +127,9 @@
         padding-bottom: 8px
 
         &:hover
-            border-bottom: solid 1px #e0ba98
+            border-bottom: solid 1px #364550
             display: inline
-
-            color: #e0ba98
+            color: #364550
 
         @media screen and (max-height: 450px)
             font-size: 18px
