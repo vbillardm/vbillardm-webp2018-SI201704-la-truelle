@@ -12,71 +12,6 @@ body {
     font-family: 'Open Sans', sans-serif!important
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Hind:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-@font-face {
-    font-family: 'Open Sans'
-}
-@font-face {
-    font-family: 'Hind'
-}
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain) */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline
-}
-
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block
-}
-
-body {
-    line-height: 1
-}
-
-ol, ul {
-    list-style: none
-}
-
-blockquote, q {
-    quotes: none
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-
-
 @import url('https://fonts.googleapis.com/css?family=Hind:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @font-face {
@@ -372,6 +307,7 @@ table {
 }
 .counters__title {
     padding: 32px 16px;
+    margin-top: 0px;
 }
 .counters__subtitle {
     font-size: 13px;
@@ -803,13 +739,9 @@ table {
     top: 0;
     height: 60px;
     width: 100%;
-<<<<<<< HEAD
+    z-index: 3000;
     background-color: 1f282f;
     z-index: 100
-=======
-    z-index: 3000;
-    background-color: 1f282f
->>>>>>> d206ad1a992a18c647119c72a22af1cfee9f6753
 }
 .header__logo {
     display: none
@@ -877,7 +809,8 @@ table {
     border-bottom: solid 1px #e0ba98;
     display: inline;
     padding-bottom: 8px;
-    color: #e0ba98
+    color: #e0ba98;
+    text-decoration: none
 }
 .header__burger {
     display: block;
@@ -947,6 +880,7 @@ table {
 .header__link:hover {
     border-bottom: solid 1px #364550;
     display: inline;
+    text-decoration: none;
     color: #364550
 }
 @media screen and (max-height: 450px) {
@@ -1015,7 +949,7 @@ table {
 .landing__content {
     width: 80vw;
     margin: auto;
-    padding-top: 30vh;
+    padding-top: 15vh;
     text-align: center;
 }
 .landing__content vertical-align:middle {}
@@ -1069,6 +1003,12 @@ table {
     left: 3px;
     bottom: 3px;
 }
+@media(min-width: 360px) {
+    .landing {}
+    .landing__content {
+        padding-top: 30vh;
+    }
+}
 
 
 
@@ -1082,7 +1022,7 @@ table {
 }
 .partners {
     text-align: center;
-    padding: 32px 48px;
+    padding: 0px 48px;
     padding-top: 32px
 }
 .partners__title {
@@ -1119,4 +1059,68 @@ table {
         font-family: 'Open Sans', sans-serif;
         color: #888888
     }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@font-face {
+    font-family: 'Open Sans'
+}
+@font-face {
+    font-family: 'Hind'
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
 }
