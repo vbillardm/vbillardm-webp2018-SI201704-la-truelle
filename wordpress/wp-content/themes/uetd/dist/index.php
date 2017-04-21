@@ -5,11 +5,11 @@
         <h2 class="header__title">U&D</h2>
         <img class="header__logo" src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/Logo-2.png" alt="U&D">
         <div class="header__rowmenu">
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu1"); ?></a></div>
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu2"); ?></a></div>
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu3"); ?></a></div>
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu4"); ?></a></div>
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu5"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#landing"><?php the_field("header_menu1"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#about"><?php the_field("header_menu2"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#expertise"><?php the_field("header_menu3"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#counters"><?php the_field("header_menu4"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#partners"><?php the_field("header_menu5"); ?></a></div>
         </div>
         <div class="header__burger" onclick="openNav()">
             <img class="header__cheeseBurger" src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/menu-burger-e1492740390879.png" alt="Menu">
@@ -21,16 +21,16 @@
             <img class="header__baconBurger" src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/menu-closed-e1492740858657.png" alt="">
         </a>
         <ul class="header__menu">
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu1"); ?></a></li>
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu2"); ?></a></li>
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu3"); ?></a></li>
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu4"); ?></a></li>
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu5"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#landing"><?php the_field("header_menu1"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#about"><?php the_field("header_menu2"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#expertise"><?php the_field("header_menu3"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#counters"><?php the_field("header_menu4"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#partners"><?php the_field("header_menu5"); ?></a></li>
         </ul>
     </div>
 </section>
 <div id="main">
-<section class="landing">
+<section class="landing" id="landing">
     <div class="landing__background" style="background-image:url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/img-principale-1.jpg">
         <div class="landing__content">
             <h1 class="landing__title"><?php the_field("landing_title"); ?></h1>
@@ -42,7 +42,7 @@
     </div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
     <h2 class="about__title"><?php the_field("about_title"); ?></h2>
     <div class="about__middle">
         <div class="about__container" style="background: url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/about-img.jpg'); background-size: cover;">
@@ -71,7 +71,7 @@
     $image4 = get_field('expertise_image4');
 ?>
 
-<section class="expertise">
+<section class="expertise" id="expertise">
     <h2 class="expertise__title"><?php the_field("expertise_title"); ?></h2>
     <p class="expertise__subtitle"><?php the_field("expertise_subtitle"); ?></p>
     <div class="expertise__pictograms">
@@ -101,9 +101,9 @@
             <p class="expertise__text2"><?php the_field("expertise_bottom_text2"); ?></p>
         </div>
     </div>
-    <button class="expertise__contact">Nous contacter</button>
+    <a href="#contact" class="expertise__contact">Nous contacter</a>
 </section>
-<section class="counters" style="background: url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/img-principale-1.jpg'); background-size: cover;">
+<section class="counters" id="counters" style="background: url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/img-principale-1.jpg'); background-size: cover;">
     <div class="counters__container">
         <h2 class="counters__title"><?php the_field("counters_title"); ?></h2>
         <p class="counters__subtitle"><?php the_field("counters_subtitle"); ?></p>
@@ -127,14 +127,22 @@
         </div>
     </div>
 </section>
-<section class="partners">
+<section class="partners" id="partners">
     <h2 class="partners__title"><?php the_field("partners_title"); ?></h2>
     <p class="partners__subtitle"><?php the_field("partners_subtitle"); ?></p>
-    <div class="partners__logos">
-
+    <div class="partners__logos slider">
+        <div class="slide"><img src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/logo1-1.png"></div>
+        <div class="slide"><img src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/logo2.png"></div>
+        <div class="slide"><img src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/5.png"></div>
+        <div class="slide"><img src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/logo4.png"></div>
+        <div class="slide"><img src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/logo3.png"></div>
     </div>
 </section>
-<section class="contact">
+
+<style>
+
+</style>
+<section class="contact" id="contact">
     <h1 class="contact__title">Contactez-nous</h1>
     <p class="contact__subtitle">Vous avez une question ou une demande d'information ?</p>
     <?php

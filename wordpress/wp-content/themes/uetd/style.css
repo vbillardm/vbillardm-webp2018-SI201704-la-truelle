@@ -724,6 +724,7 @@ body {
     top: 0;
     height: 60px;
     width: 100%;
+    z-index: 3000;
     background-color: 1f282f
 }
 .header__logo {
@@ -872,6 +873,7 @@ body {
     top: 0;
     right: 25px;
     font-size: 36px;
+    z-index: 3001;
     margin-left: 50px
 }
 #main {
@@ -953,7 +955,8 @@ body {
 }
 .partners {
     text-align: center;
-    padding: 32px 48px
+    padding: 32px 48px;
+    padding-top: 32px
 }
 .partners__title {
     font-size: 20px;
@@ -968,6 +971,9 @@ body {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     color: #888888
+}
+.partners__logos {
+    margin-top: 32px
 }
 @media(min-width: 360px) {
     .partners {
