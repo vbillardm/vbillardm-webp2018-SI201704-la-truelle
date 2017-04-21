@@ -1,3 +1,4 @@
+    </div>
     <?php wp_footer(); ?>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
@@ -23,5 +24,6 @@
             });
         });
     </script>
+    <script src="<?php bloginfo('template_directory'); ?>/dist/js/app.min.js"></script>
     </body>
 </html>

@@ -1,0 +1,143 @@
+@import "../global/variables.sss"
+@import "../global/mixins.sss"
+
+.header
+    position: absolute
+
+    &__bar
+        position: fixed
+        top: 0
+        height: 60px
+        width: 100%
+        background-color: 1f282f
+
+    &__logo
+        display: none
+
+        @media(--desktop-media)
+            display: block
+            height: 25px
+            width: auto
+            margin: 25px 25px
+            color: white
+
+    &__title
+        margin-top: 13px
+        display: block
+        text-align: center
+        @apply --h1-title
+        text-transform: uppercase
+
+        @media(--desktop-media)
+            display: none
+
+    &__rowmenu
+        position: fixed
+        right: 0
+        top: 20
+        display: none
+        align-items: center
+        justify-content: flex-end
+
+        @media(--desktop-media)
+            display: flex
+
+    &__rowitem
+        margin-right: 20px
+        display: none
+        margin-top: 4px
+
+        @media(--desktop-media)
+            display: block
+
+    &__rowlink
+        color: #f9f9f9
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 11px
+        font-weight: 600
+        letter-spacing: 0.9px
+
+        &:hover
+            border-bottom: solid 1px #e0ba98
+            display: inline
+            padding-bottom: 8px
+            color: #e0ba98
+
+    &__burger
+        display: block
+        position: absolute
+        height: 60px
+        width: 72px
+        top: 0
+        right: 0
+        background-color: #364550
+
+        &:hover
+            cursor: pointer
+
+        @media(--desktop-media)
+            display: none
+
+    &__cheeseBurger
+        position: absolute
+        height: 25px
+        width: 25px
+        top: 17.5px
+        right: 23.5px
+
+    &__baconBurger
+        position: absolute
+        height: 25px
+        width: 25px
+        top: 17.5px
+        right: 0px
+
+    &__sidenav
+        height: 100%
+        width: 0
+        position: fixed
+        z-index: 1
+        top: 0
+        right: 0
+        background-color: #111
+        overflow-x: hidden
+        padding-top: 60px
+        transition: 0.5s
+        
+        @media screen and (max-height: 450px)
+            padding-top: 15px
+
+    &__item
+        height: 40px
+
+    &__link
+        padding: 8px 8px 8px 32px
+        text-decoration: none
+        font-size: 11px
+        color: #f9f9f9
+        display: block
+        transition: 0.3s
+        text-transform: uppercase
+        font-weight: 600
+        letter-spacing: 0.9px
+        padding-bottom: 8px
+
+        &:hover
+            border-bottom: solid 1px #e0ba98
+            display: inline
+
+            color: #e0ba98
+
+        @media screen and (max-height: 450px)
+            font-size: 18px
+
+    &__close
+        position: absolute
+        top: 0
+        right: 25px
+        font-size: 36px
+        margin-left: 50px
+
+#main
+    transition: margin-right .5s

@@ -1,0 +1,125 @@
+@import "../global/variables.sss"
+@import "../global/mixins.sss"
+
+.about
+    min-height: 80vh
+    width: 100%
+    padding: 36px 0px
+
+    &__title
+        @apply --h2-title-mobile
+        margin-bottom: 16px
+        text-align: center
+        margin-top: 15px
+
+    &__subtitle
+        @apply --h3-title
+        margin-bottom: 16px
+        text-align: left
+        margin-top: 15px
+        margin-left: 36px
+
+    &__text
+        @apply --p-text-mobile
+
+    &__text1
+        margin: 0 20px 20px 36px
+
+        @media(--desktop-media)
+            width: 40vw
+
+    &__image
+
+    &__image1
+        width: 100%
+        height: 127px
+
+    &__container
+        width: 100%
+        height: 127px
+        background-position: center center
+        background-repeat: no-repeat
+        background-attachment: fixed
+        background-size: cover
+        background-color: #999
+
+        @media(--desktop-media)
+            position: absolute
+            width: 52%
+            height: 300px
+            background-position: center center
+            background-repeat: no-repeat
+            background-attachment: fixed
+            background-size: cover
+            background-color: #999
+            left: 47vw
+
+    &__image2
+        width: 80%
+        max-width: 500px
+        height: auto
+        margin-left: 36px
+
+        @media(--desktop-media)
+            margin-top: 30px
+            max-width: 1000px
+            width: 52%
+            height: 400px
+            z-index: 2
+
+    &__middle
+        position: relative
+
+    &__image3
+        display: none
+
+        @media(--desktop-media)
+            display: block
+            position: absolute
+            right: 200px
+            top: 350px
+
+    &__image4
+        display: none
+
+        @media(--desktop-media)
+            display: block
+            position: absolute
+            right: 0
+            top: 350px
+
+    &__bottom
+        display: inline-block
+        text-align: left
+        padding: 0px 48px
+        margin-bottom: 28px
+
+        p
+            @apply --p-text-mobile
+
+        &_left
+            margin-bottom: 16px
+
+        &_right
+            margin-bottom: 16px
+
+@media(--desktop-media)
+    .about
+        &__title
+            @apply --h2-title
+            margin-bottom: 32px
+
+        &__subtitle
+            @apply --h3-title
+            padding: 0px 64px
+            margin-bottom: 32px
+
+        &__bottom
+            text-align: left
+            display: flex
+            align-items: flex-end
+            padding: 0px 10%
+
+            p
+                @apply --p-text
+                width: 95%

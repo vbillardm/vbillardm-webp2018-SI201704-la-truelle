@@ -72,7 +72,7 @@ gulp.task('sss', function () {
 gulp.task('js', function() {
   return gulp.src('wp-content/themes/uetd/app/js/**/*.js')
     .pipe(uglify())
-    .pipe(concat('wp-content/themes/uetd/app.js'))
+    .pipe(concat('app.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('wp-content/themes/uetd/dist/js'))
     .pipe(sync.stream());
