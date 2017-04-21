@@ -1,4 +1,4 @@
-<section class="landing">
+<section class="landing" id="landing">
     <div class="landing__background" style="background-image:url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/img-principale-1.jpg">
         <div class="landing__content">
             <h1 class="landing__title"><?php the_field("landing_title"); ?></h1>

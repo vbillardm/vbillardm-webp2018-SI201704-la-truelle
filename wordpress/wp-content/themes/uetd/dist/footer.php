@@ -23,6 +23,17 @@
                 $('.date_input').attr('placeholder', 'Date désirée');
             });
         });
+
+        $('a[href^="#"]').click(function(e){
+            e.preventDefault();
+            var target = this.hash;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': ($target.offset().top)-60
+            }, 900, 'swing', function(){
+                window.location.hash = target;
+            })
+        });
     </script>
     <script src="<?php bloginfo('template_directory'); ?>/dist/js/app.min.js"></script>
     </body>

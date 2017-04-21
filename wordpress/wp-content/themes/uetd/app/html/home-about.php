@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about" id="about">
     <h2 class="about__title"><?php the_field("about_title"); ?></h2>
     <div class="about__middle">
         <div class="about__container" style="background: url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/about-img.jpg'); background-size: cover;">

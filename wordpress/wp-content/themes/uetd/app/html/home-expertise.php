@@ -5,7 +5,7 @@
     $image4 = get_field('expertise_image4');
 ?>
 
-<section class="expertise">
+<section class="expertise" id="expertise">
     <h2 class="expertise__title"><?php the_field("expertise_title"); ?></h2>
     <p class="expertise__subtitle"><?php the_field("expertise_subtitle"); ?></p>
     <div class="expertise__pictograms">
