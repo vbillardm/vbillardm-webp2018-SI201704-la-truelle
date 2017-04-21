@@ -35,5 +35,5 @@
             <p class="expertise__text2"><?php the_field("expertise_bottom_text2"); ?></p>
         </div>
     </div>
-    <button class="expertise__contact">Nous contacter</button>
+    <a href="#contact" class="expertise__contact">Nous contacter</a>
 </section>
