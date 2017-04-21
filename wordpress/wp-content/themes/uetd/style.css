@@ -803,8 +803,13 @@ table {
     top: 0;
     height: 60px;
     width: 100%;
+<<<<<<< HEAD
     background-color: 1f282f;
     z-index: 100
+=======
+    z-index: 3000;
+    background-color: 1f282f
+>>>>>>> d206ad1a992a18c647119c72a22af1cfee9f6753
 }
 .header__logo {
     display: none
@@ -954,6 +959,7 @@ table {
     top: 0;
     right: 25px;
     font-size: 36px;
+    z-index: 3001;
     margin-left: 50px
 }
 #main {
@@ -1076,7 +1082,8 @@ table {
 }
 .partners {
     text-align: center;
-    padding: 32px 48px
+    padding: 32px 48px;
+    padding-top: 32px
 }
 .partners__title {
     font-size: 20px;
@@ -1091,6 +1098,9 @@ table {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     color: #888888
+}
+.partners__logos {
+    margin-top: 32px
 }
 @media(min-width: 360px) {
     .partners {

@@ -1,4 +1,4 @@
-<section class="contact">
+<section class="contact" id="contact">
     <h1 class="contact__title">Contactez-nous</h1>
     <p class="contact__subtitle">Vous avez une question ou une demande d'information ?</p>
     <?php

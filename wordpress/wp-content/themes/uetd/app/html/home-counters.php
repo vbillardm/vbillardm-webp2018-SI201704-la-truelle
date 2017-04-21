@@ -1,4 +1,4 @@
-<section class="counters" style="background: url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/img-principale-1.jpg'); background-size: cover;">
+<section class="counters" id="counters" style="background: url('http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/img-principale-1.jpg'); background-size: cover;">
     <div class="counters__container">
         <h2 class="counters__title"><?php the_field("counters_title"); ?></h2>
         <p class="counters__subtitle"><?php the_field("counters_subtitle"); ?></p>

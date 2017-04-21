@@ -5,11 +5,11 @@
         <h2 class="header__title">U&D</h2>
         <img class="header__logo" src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/Logo-1.png" alt="U&D">
         <div class="header__rowmenu">
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu1"); ?></a></div>
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu2"); ?></a></div>
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu3"); ?></a></div>
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu4"); ?></a></div>
-            <div class="header__rowitem"><a class="header__rowlink" href="#"><?php the_field("header_menu5"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#landing"><?php the_field("header_menu1"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#about"><?php the_field("header_menu2"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#expertise"><?php the_field("header_menu3"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#counters"><?php the_field("header_menu4"); ?></a></div>
+            <div class="header__rowitem"><a class="header__rowlink" href="#partners"><?php the_field("header_menu5"); ?></a></div>
         </div>
         <div class="header__burger" onclick="openNav()">
             <img class="header__cheeseBurger" src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/menu-burger-e1492740390879.png" alt="Menu">
@@ -21,11 +21,11 @@
             <img class="header__baconBurger" src="http://u-d.ivanprunier.fr/wp-content/uploads/2017/04/menu-closed-e1492740858657.png" alt="">
         </a>
         <ul class="header__menu">
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu1"); ?></a></li>
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu2"); ?></a></li>
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu3"); ?></a></li>
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu4"); ?></a></li>
-            <li class="header__item"><a class="header__link" href="#"><?php the_field("header_menu5"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#landing"><?php the_field("header_menu1"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#about"><?php the_field("header_menu2"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#expertise"><?php the_field("header_menu3"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#counters"><?php the_field("header_menu4"); ?></a></li>
+            <li class="header__item"><a class="header__link" href="#partners"><?php the_field("header_menu5"); ?></a></li>
         </ul>
     </div>
 </section>
